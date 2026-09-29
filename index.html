@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>aliensriot: картины, украшения и диджитал-товары ручной работы</title>
+    <meta
+      name="description"
+      content="aliensriot: картины, украшения ручной работы, диджитал-товары (планеры, календари) и эко-проект only20dollars. Витрина работ и магазин диджитал-товаров."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&family=Caveat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--
+      Значок вкладки (favicon): положите свой файл favicon.svg или
+      favicon.png в assets/ и раскомментируйте строку ниже.
+      <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main" style="position:absolute;left:-9999px">
+      Перейти к содержанию
+    </a>
+
+    <!-- ============================= NAV ============================= -->
+    <header class="nav">
+      <div class="wrap">
+        <a class="nav__mark" href="#top">
+          <span class="dot" aria-hidden="true"></span>
+          aliensriot
+        </a>
+        <nav class="nav__links" aria-label="Основная навигация">
+          <a class="nav__link" href="#about" data-i18n="nav.about">Обо мне</a>
+          <a class="nav__link" href="#jewelry" data-i18n="nav.jewelry">Украшения</a>
+          <a class="nav__link" href="#paintings" data-i18n="nav.paintings">Картины</a>
+          <a class="nav__link" href="#thrift" data-i18n="nav.thrift">only20dollars</a>
+          <a class="nav__link" href="#digital" data-i18n="nav.digital">Диджитал</a>
+          <a class="nav__link" href="#contact" data-i18n="nav.contact">Контакты</a>
+        </nav>
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div class="lang-toggle" role="group" aria-label="Язык / Language">
+            <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a
+            class="nav__cta"
+            href="https://t.me/aliens_riot"
+            target="_blank"
+            rel="noopener"
+            data-i18n="nav.cta"
+            >Написать в Telegram</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================ TICKER ============================ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span data-i18n="ticker.text">ручная работа • маленькими партиями • картины • украшения • секонд-хенд • диджитал-товары • only20dollars • aliensriot • </span>
+        <span data-i18n="ticker.text">ручная работа • маленькими партиями • картины • украшения • секонд-хенд • диджитал-товары • only20dollars • aliensriot • </span>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- ============================= HERO ============================= -->
+      <section class="hero" id="top">
+        <div class="wrap">
+          <div>
+            <p class="hero__eyebrow" data-i18n="hero.eyebrow">
+              здесь живут инопланетяне и делают всякое
+            </p>
+            <h1 class="hero__title">
+              <span data-i18n="hero.title.pre">вещи, сделанные </span
+              ><em data-i18n="hero.title.em">руками</em
+              ><span data-i18n="hero.title.post">, а не конвейером</span>
+            </h1>
+            <p class="hero__lede" data-i18n="hero.lede">
+              aliensriot: картины, украшения ручной работы и диджитал-товары,
+              и наш эко-проект only20dollars, где старые хорошие вещи получают
+              вторую жизнь. Ниже вся витрина: что посмотреть, что купить и что
+              скачать прямо сейчас.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn-primary" href="#jewelry" data-i18n="hero.cta.jewelry"
+                >Смотреть украшения</a
+              >
+              <a class="btn btn-outline" href="#digital" data-i18n="hero.cta.digital"
+                >Диджитал-товары</a
+              >
+            </div>
+            <div class="hero__tags">
+              <span class="tag" data-i18n="hero.tag1">картины и украшения</span>
+              <span class="tag" data-i18n="hero.tag2">диджитал-товары</span>
+              <span class="tag" data-i18n="hero.tag3">only20dollars: секонд-хенд</span>
+            </div>
+          </div>
+
+          <div class="hero__art" aria-hidden="true">
+            <div class="blob hero__blob-1"></div>
+            <div class="blob hero__blob-2"></div>
+            <div class="hero__sticker">
+              <span data-i18n="hero.sticker" style="white-space: pre-line;">сделано
+вручную</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= ABOUT ============================= -->
+      <section class="section about" id="about">
+        <div class="wrap">
+          <div class="about__portrait">
+            <div class="photo-slot">
+              <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="7" width="18" height="13" rx="2" />
+                <path d="M8 7l1.5-2.5h5L16 7" />
+                <circle cx="12" cy="13.5" r="3.4" />
+              </svg>
+              <span data-i18n="about.photo" style="white-space: pre-line;">фото
+aliensriot</span>
+            </div>
+          </div>
+          <div class="about__body">
+            <p class="section__kicker" data-i18n="about.kicker">обо мне</p>
+            <h2 class="section__title" data-i18n="about.title">aliensriot</h2>
+            <p data-i18n="about.p1">
+              Я художница и делаю вещи руками: картины, украшения,
+              диджитал-товары и всё, что рождается на стыке рисунка и
+              ремесла. Мне важнее характер вещи, чем её идеальность.
+            </p>
+            <p data-i18n="about.p2">
+              Картины и украшения существуют в небольшом количестве или в
+              единственном экземпляре. Диджитал-товары (планеры и календари)
+              можно скачать сразу после оплаты. А в проекте only20dollars мы
+              с друзьями даём вторую жизнь вещам из наших шкафов.
+            </p>
+            <ul class="about__facts">
+              <li>
+                <span class="mark" aria-hidden="true">✦</span>
+                <span data-i18n="about.fact1">больше 30 украшений в текущей коллекции</span>
+              </li>
+              <li>
+                <span class="mark" aria-hidden="true">✦</span>
+                <span data-i18n="about.fact2">картины, планеры и календари, каждый в своём формате</span>
+              </li>
+              <li>
+                <span class="mark" aria-hidden="true">✦</span>
+                <span data-i18n="about.fact3">only20dollars: секонд-хенд и эко-аксессуары из вторсырья</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ JEWELRY ============================ -->
+      <section class="section section--paper" id="jewelry">
+        <div class="wrap">
+          <div class="section__head">
+            <div>
+              <p class="section__kicker" data-i18n="jewelry.kicker">украшения</p>
+              <h2 class="section__title" data-i18n="jewelry.title">Витрина работ</h2>
+            </div>
+            <p class="section__note" data-i18n="jewelry.note">
+              Это витрина: купить украшение можно, написав напрямую в
+              Telegram. Здесь показана только часть коллекции.
+            </p>
+          </div>
+
+          <div class="jewelry-grid">
+            <!--
+              Карточка украшения. Чтобы добавить своё:
+              1) замените .photo-slot на <img src="assets/ваше-фото.jpg" alt="...">
+              2) поменяйте текст в h3 и, если нужно, тег в p
+              Повторите блок .jewel-card нужное число раз.
+            -->
+            <article class="jewel-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="jewelry.card.photo" style="white-space:pre-line;">фото
+изделия</span>
+              </div>
+              <h3 data-i18n="jewelry.card1.title">Кольцо №1</h3>
+              <p data-i18n="jewelry.card.tag">1 экземпляр</p>
+            </article>
+
+            <article class="jewel-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="jewelry.card.photo" style="white-space:pre-line;">фото
+изделия</span>
+              </div>
+              <h3 data-i18n="jewelry.card2.title">Серьги №1</h3>
+              <p data-i18n="jewelry.card.tag">1 экземпляр</p>
+            </article>
+
+            <article class="jewel-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="jewelry.card.photo" style="white-space:pre-line;">фото
+изделия</span>
+              </div>
+              <h3 data-i18n="jewelry.card3.title">Кулон №1</h3>
+              <p data-i18n="jewelry.card.tag">1 экземпляр</p>
+            </article>
+
+            <article class="jewel-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="jewelry.card.photo" style="white-space:pre-line;">фото
+изделия</span>
+              </div>
+              <h3 data-i18n="jewelry.card4.title">Браслет №1</h3>
+              <p data-i18n="jewelry.card.tag">1 экземпляр</p>
+            </article>
+
+            <article class="jewel-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="jewelry.card.photo" style="white-space:pre-line;">фото
+изделия</span>
+              </div>
+              <h3 data-i18n="jewelry.card5.title">Кольцо №2</h3>
+              <p data-i18n="jewelry.card.tag">1 экземпляр</p>
+            </article>
+
+            <article class="jewel-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="jewelry.card.photo" style="white-space:pre-line;">фото
+изделия</span>
+              </div>
+              <h3 data-i18n="jewelry.card6.title">Серьги №2</h3>
+              <p data-i18n="jewelry.card.tag">1 экземпляр</p>
+            </article>
+
+            <article class="jewel-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="jewelry.card.photo" style="white-space:pre-line;">фото
+изделия</span>
+              </div>
+              <h3 data-i18n="jewelry.card7.title">Кулон №2</h3>
+              <p data-i18n="jewelry.card.tag">1 экземпляр</p>
+            </article>
+
+            <article class="jewel-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="jewelry.card.photo" style="white-space:pre-line;">фото
+изделия</span>
+              </div>
+              <h3 data-i18n="jewelry.card8.title">Браслет №2</h3>
+              <p data-i18n="jewelry.card.tag">1 экземпляр</p>
+            </article>
+          </div>
+
+          <div class="jewelry-more">
+            <p data-i18n="jewelry.more.text">и ещё больше 20 украшений в Telegram</p>
+            <a
+              class="btn btn-outline"
+              style="color:var(--ink-text-on-paper); box-shadow:4px 4px 0 var(--riot);"
+              href="https://t.me/aliens_riot"
+              target="_blank"
+              rel="noopener"
+              data-i18n="jewelry.more.cta"
+              >Смотреть весь каталог</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ PAINTINGS ============================ -->
+      <section class="section paintings" id="paintings">
+        <div class="wrap">
+          <div class="section__head">
+            <div>
+              <p class="section__kicker" data-i18n="paintings.kicker">картины</p>
+              <h2 class="section__title" data-i18n="paintings.title">Живопись</h2>
+            </div>
+            <p class="section__note" data-i18n="paintings.note">
+              Оригинальные картины, каждая в единственном экземпляре. Про
+              технику, размер и цену лучше спросить напрямую.
+            </p>
+          </div>
+
+          <div class="painting-grid">
+            <!--
+              Карточка картины. Чтобы добавить свою:
+              1) замените .photo-slot на <img src="assets/ваше-фото.jpg" alt="...">
+              2) поменяйте текст в h3
+              Повторите блок .painting-card нужное число раз.
+            -->
+            <article class="painting-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="paintings.card.photo" style="white-space:pre-line;">фото
+картины</span>
+              </div>
+              <h3 data-i18n="paintings.card1.title">Картина №1</h3>
+              <p data-i18n="paintings.card.tag">оригинал</p>
+            </article>
+
+            <article class="painting-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="paintings.card.photo" style="white-space:pre-line;">фото
+картины</span>
+              </div>
+              <h3 data-i18n="paintings.card2.title">Картина №2</h3>
+              <p data-i18n="paintings.card.tag">оригинал</p>
+            </article>
+
+            <article class="painting-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="paintings.card.photo" style="white-space:pre-line;">фото
+картины</span>
+              </div>
+              <h3 data-i18n="paintings.card3.title">Картина №3</h3>
+              <p data-i18n="paintings.card.tag">оригинал</p>
+            </article>
+
+            <article class="painting-card">
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="paintings.card.photo" style="white-space:pre-line;">фото
+картины</span>
+              </div>
+              <h3 data-i18n="paintings.card4.title">Картина №4</h3>
+              <p data-i18n="paintings.card.tag">оригинал</p>
+            </article>
+          </div>
+
+          <div class="paintings-more">
+            <p data-i18n="paintings.more.text">полный архив работ в творческом канале</p>
+            <a
+              class="btn btn-outline"
+              href="https://t.me/aliensriot"
+              target="_blank"
+              rel="noopener"
+              data-i18n="paintings.more.cta"
+              >Спросить про картину</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ THRIFT / only20dollars ============================ -->
+      <section class="section section--paper" id="thrift">
+        <div class="wrap">
+          <div class="section__head">
+            <div>
+              <p class="section__kicker" data-i18n="thrift.kicker">эко-проект</p>
+              <h2 class="section__title" data-i18n="thrift.title">only20dollars</h2>
+            </div>
+            <p class="section__note" data-i18n="thrift.note">
+              Секонд-хенд: одежда и вещи из наших шкафов и шкафов друзей
+              получают вторую жизнь вместо помойки. Название родом из любви к
+              песне про поход в трифт-шоп, где лучшая находка стоит не дороже
+              двадцати долларов.
+            </p>
+          </div>
+
+          <div class="thrift-grid">
+            <!--
+              Карточка вещи из секонд-хенда. Чтобы добавить свою:
+              1) замените .photo-slot на <img src="assets/ваше-фото.jpg" alt="...">
+              2) поменяйте текст в h3
+              Повторите блок .thrift-card нужное число раз.
+            -->
+            <article class="thrift-card">
+              <span class="thrift-card__hole" aria-hidden="true"></span>
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="thrift.card.photo" style="white-space:pre-line;">фото
+вещи</span>
+              </div>
+              <h3 data-i18n="thrift.card1.title">Худи</h3>
+              <p data-i18n="thrift.card.tag">секонд-хенд</p>
+            </article>
+
+            <article class="thrift-card">
+              <span class="thrift-card__hole" aria-hidden="true"></span>
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="thrift.card.photo" style="white-space:pre-line;">фото
+вещи</span>
+              </div>
+              <h3 data-i18n="thrift.card2.title">Джинсы</h3>
+              <p data-i18n="thrift.card.tag">секонд-хенд</p>
+            </article>
+
+            <article class="thrift-card">
+              <span class="thrift-card__hole" aria-hidden="true"></span>
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="thrift.card.photo" style="white-space:pre-line;">фото
+вещи</span>
+              </div>
+              <h3 data-i18n="thrift.card3.title">Рубашка</h3>
+              <p data-i18n="thrift.card.tag">секонд-хенд</p>
+            </article>
+
+            <article class="thrift-card">
+              <span class="thrift-card__hole" aria-hidden="true"></span>
+              <div class="photo-slot">
+                <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                <span data-i18n="thrift.card.photo" style="white-space:pre-line;">фото
+вещи</span>
+              </div>
+              <h3 data-i18n="thrift.card4.title">Аксессуар</h3>
+              <p data-i18n="thrift.card.tag">секонд-хенд</p>
+            </article>
+          </div>
+
+          <div class="thrift-more">
+            <p data-i18n="thrift.more.text">весь ассортимент обновляется в Telegram</p>
+            <a
+              class="btn btn-outline"
+              style="color:var(--ink-text-on-paper); box-shadow:4px 4px 0 var(--ufo);"
+              href="https://t.me/only20dollars"
+              target="_blank"
+              rel="noopener"
+              data-i18n="thrift.more.cta"
+              >Смотреть каталог only20dollars</a
+            >
+          </div>
+
+          <!-- Новая линия: эко-аксессуары из пакетов -->
+          <div class="thrift-eco">
+            <div class="thrift-eco__head">
+              <p class="section__kicker" data-i18n="thrift.eco.kicker">новая линия</p>
+              <h3 data-i18n="thrift.eco.title">Эко-аксессуары из пакетов</h3>
+              <p data-i18n="thrift.eco.note">
+                Кардхолдеры, обложки на паспорт и кошельки, сшитые из
+                вторсырья: старых пакетов, которым иначе была бы одна дорога.
+                Пока готово всего несколько экземпляров, линия только
+                начинается.
+              </p>
+              <a
+                class="btn btn-outline"
+                style="color:var(--ink-text-on-paper); box-shadow:4px 4px 0 var(--ufo);"
+                href="https://t.me/only20dollars"
+                target="_blank"
+                rel="noopener"
+                data-i18n="thrift.eco.cta"
+                >Спросить про эко-линию</a
+              >
+            </div>
+
+            <div class="thrift-eco-grid">
+              <article class="thrift-card">
+                <span class="thrift-card__hole" aria-hidden="true"></span>
+                <div class="photo-slot">
+                  <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                  <span data-i18n="thrift.card.photo" style="white-space:pre-line;">фото
+вещи</span>
+                </div>
+                <h3 data-i18n="thrift.eco.card1.title">Кардхолдер</h3>
+                <p data-i18n="thrift.eco.card.tag">из вторсырья</p>
+              </article>
+
+              <article class="thrift-card">
+                <span class="thrift-card__hole" aria-hidden="true"></span>
+                <div class="photo-slot">
+                  <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                  <span data-i18n="thrift.card.photo" style="white-space:pre-line;">фото
+вещи</span>
+                </div>
+                <h3 data-i18n="thrift.eco.card2.title">Обложка на паспорт</h3>
+                <p data-i18n="thrift.eco.card.tag">из вторсырья</p>
+              </article>
+
+              <article class="thrift-card">
+                <span class="thrift-card__hole" aria-hidden="true"></span>
+                <div class="photo-slot">
+                  <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5-9 9"/></svg>
+                  <span data-i18n="thrift.card.photo" style="white-space:pre-line;">фото
+вещи</span>
+                </div>
+                <h3 data-i18n="thrift.eco.card3.title">Кошелёк</h3>
+                <p data-i18n="thrift.eco.card.tag">из вторсырья</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================ DIGITAL ============================ -->
+      <section class="section digital" id="digital">
+        <div class="wrap">
+          <div class="section__head">
+            <div>
+              <p class="section__kicker" data-i18n="digital.kicker">диджитал-товары</p>
+              <h2 class="section__title" data-i18n="digital.title">Скачать и пользоваться</h2>
+            </div>
+            <p class="section__note" data-i18n="digital.note">
+              Оплата через Продамус, ссылка на скачивание приходит сразу
+              после оплаты.
+            </p>
+          </div>
+
+          <div class="digital-grid">
+            <!--
+              Карточка диджитал-товара.
+              Кнопка "Купить" сейчас ведёт на "#", замените href на ссылку
+              вашей платёжной страницы Продамус для этого товара.
+            -->
+            <article class="digital-card">
+              <div class="digital-card__bar">
+                <span>planner.pdf</span>
+                <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
+              </div>
+              <div class="digital-card__body">
+                <div class="photo-slot">
+                  <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 4v3M16 4v3"/></svg>
+                  <span data-i18n="digital.card.photo" style="white-space:pre-line;">превью
+товара</span>
+                </div>
+                <h3 data-i18n="digital.card1.title">Недельный планер</h3>
+                <p data-i18n="digital.card1.desc">PDF-планер на неделю, для печати или планшета.</p>
+                <div class="digital-card__foot">
+                  <span class="price">490 ₽</span>
+                  <a class="buy-btn" href="#" data-i18n="digital.buy">Купить</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="digital-card">
+              <div class="digital-card__bar">
+                <span>calendar.pdf</span>
+                <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
+              </div>
+              <div class="digital-card__body">
+                <div class="photo-slot">
+                  <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 4v3M16 4v3"/></svg>
+                  <span data-i18n="digital.card.photo" style="white-space:pre-line;">превью
+товара</span>
+                </div>
+                <h3 data-i18n="digital.card2.title">Календарь на год</h3>
+                <p data-i18n="digital.card2.desc">Годовой календарь с иллюстрациями aliensriot.</p>
+                <div class="digital-card__foot">
+                  <span class="price">690 ₽</span>
+                  <a class="buy-btn" href="#" data-i18n="digital.buy">Купить</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="digital-card">
+              <div class="digital-card__bar">
+                <span>stickers.zip</span>
+                <span class="dots" aria-hidden="true"><span></span><span></span><span></span></span>
+              </div>
+              <div class="digital-card__body">
+                <div class="photo-slot">
+                  <svg class="photo-slot__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 4v3M16 4v3"/></svg>
+                  <span data-i18n="digital.card.photo" style="white-space:pre-line;">превью
+товара</span>
+                </div>
+                <h3 data-i18n="digital.card3.title">Набор наклеек для планера</h3>
+                <p data-i18n="digital.card3.desc">Диджитал-стикеры для цифрового ежедневника.</p>
+                <div class="digital-card__foot">
+                  <span class="price">290 ₽</span>
+                  <a class="buy-btn" href="#" data-i18n="digital.buy">Купить</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="digital-note" data-i18n="digital.note.footer">
+            * Кнопки временные, их нужно подключить к настоящей странице оплаты
+            Продамус, когда аккаунт будет создан.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================ CONTACT ============================ -->
+      <section class="section contact" id="contact">
+        <div class="wrap">
+          <div>
+            <p class="section__kicker" data-i18n="contact.kicker">контакты</p>
+            <h2 class="section__title" data-i18n="contact.title">Написать</h2>
+            <p class="section__note" data-i18n="contact.p" style="margin-top:14px;">
+              Быстрее всего писать в Telegram. Форма ниже тоже работает и приходит
+              на почту.
+            </p>
+
+            <ul class="contact__channels">
+              <li>
+                <a href="https://t.me/aliens_riot" target="_blank" rel="noopener">
+                  <span>
+                    <span data-i18n="contact.tg1.title">Личный Telegram</span>
+                    <small data-i18n="contact.tg1.sub">вопросы, заказы, всё на свете</small>
+                  </span>
+                  <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/aliensriot" target="_blank" rel="noopener">
+                  <span>
+                    <span data-i18n="contact.tg2.title">Творческий канал</span>
+                    <small data-i18n="contact.tg2.sub">новые работы и процесс</small>
+                  </span>
+                  <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/merch_aliensriot" target="_blank" rel="noopener">
+                  <span>
+                    <span data-i18n="contact.tg3.title">Каталог мерча</span>
+                    <small data-i18n="contact.tg3.sub">мерч в Telegram</small>
+                  </span>
+                  <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/only20dollars" target="_blank" rel="noopener">
+                  <span>
+                    <span data-i18n="contact.tg4.title">only20dollars</span>
+                    <small data-i18n="contact.tg4.sub">секонд-хенд и эко-аксессуары</small>
+                  </span>
+                  <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:alisha.b8k.00@gmail.com">
+                  <span>
+                    <span data-i18n="contact.email.title">Email</span>
+                    <small data-i18n="contact.email.sub">для более формальных вопросов</small>
+                  </span>
+                  <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <!--
+              Форма ниже отправляет данные через Formspree (бесплатный
+              сервис форм для статичных сайтов). Чтобы подключить:
+              1) зарегистрируйтесь на https://formspree.io
+              2) создайте форму, скопируйте её адрес вида
+                 https://formspree.io/f/XXXXXXX
+              3) вставьте этот адрес вместо action="#" ниже
+            -->
+            <form
+              class="form"
+              action="#"
+              method="POST"
+            >
+              <div>
+                <label for="name" data-i18n="form.name">Имя</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="email" data-i18n="form.email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div>
+                <label for="message" data-i18n="form.message">Сообщение</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit" data-i18n="form.submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <span data-i18n="footer.rights">aliensriot, ручная работа и диджитал-товары</span>
+        <span>© <span id="year">2026</span> · <span data-i18n="footer.made">сайт сделан вручную, как и всё остальное</span></span>
+      </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
