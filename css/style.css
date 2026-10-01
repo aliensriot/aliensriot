@@ -14,8 +14,8 @@
   --ink-text-on-paper: #17151d;
 
   --font-display: "Unbounded", sans-serif;
-  --font-body: "Space Grotesk", sans-serif;
-  --font-mono: "Space Mono", monospace;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
   --font-mark: "Caveat", cursive;
 
   --wrap: 1180px;
@@ -88,13 +88,19 @@ button {
   border-bottom: 2px solid var(--ink-line);
 }
 
-.nav .wrap {
+.nav__bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
   padding-top: 14px;
   padding-bottom: 14px;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .nav__mark {
@@ -183,12 +189,89 @@ button {
   box-shadow: 4px 4px 0 var(--paper);
 }
 
+.nav__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 34px;
+  height: 34px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav__burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--paper);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav__burger[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav__burger[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav__burger[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav__mobile {
+  display: none;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+  border-top: 2px solid var(--ink-line);
+}
+
+.nav__mobile.is-open {
+  max-height: 480px;
+  opacity: 1;
+}
+
+.nav__mobile-link {
+  padding: 14px var(--gutter);
+  text-decoration: none;
+  color: var(--paper);
+  font-size: 16px;
+  border-bottom: 1.5px solid var(--ink-line);
+}
+
+.nav__mobile-link:hover {
+  color: var(--acid);
+}
+
+.nav__mobile-foot {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px var(--gutter) 6px;
+}
+
 @media (max-width: 760px) {
   .nav__links {
-    gap: 12px;
-  }
-  .nav__link {
     display: none;
+  }
+  .nav__right .lang-toggle,
+  .nav__right .nav__cta {
+    display: none;
+  }
+  .nav__burger,
+  .nav__mobile {
+    display: flex;
+  }
+  .nav__mobile-foot {
+    display: flex;
   }
 }
 
@@ -234,7 +317,7 @@ button {
 
 .hero {
   position: relative;
-  padding: 72px 0 96px;
+  padding: 20px 0 96px;
   overflow: hidden;
 }
 
@@ -256,7 +339,7 @@ button {
 
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 5.5vw, 4.4rem);
+  font-size: clamp(2.2rem, 5.1vw, 4.0rem);
   line-height: 1.02;
   font-weight: 700;
   margin: 0 0 22px;
@@ -274,8 +357,8 @@ button {
 }
 
 .hero__lede {
-  font-size: 18px;
-  max-width: 46ch;
+  font-size: 16px;
+  max-width: 50ch;
   opacity: 0.88;
   margin: 0 0 30px;
 }
@@ -377,6 +460,7 @@ button {
   height: 190px;
   background: var(--paper);
   border-radius: 50%;
+    overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -384,7 +468,11 @@ button {
   border: 3px solid var(--ink);
   box-shadow: 6px 6px 0 var(--ink);
 }
-
+.hero__sticker img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .hero__sticker span {
   font-family: var(--font-mark);
   color: var(--ink);
@@ -481,7 +569,7 @@ button {
   justify-content: center;
   gap: 10px;
   color: var(--paper);
-  opacity: 0.6;
+  opacity: 0,6;
   text-align: center;
   padding: 20px;
 }
@@ -490,6 +578,27 @@ button {
   border-color: var(--paper-line);
   background: rgba(14, 14, 18, 0.05);
   color: var(--ink-text-on-paper);
+}
+.jewel-card .photo-slot,
+.thrift-card .photo-slot {
+  border-color: var(--ink-line);
+  background: var(--ink-soft);
+  color: var(--paper);
+}
+/* Как только плейсхолдер <div class="photo-slot"> заменят на настоящее
+   фото <img class="photo-slot" src="..." alt="...">, это правило само
+   уберёт пунктирную рамку и серый фон и впишет фото в ту же рамку
+   (тот же размер, скругление, форму), что и у плейсхолдера. Менять
+   ничего дополнительно не нужно, достаточно оставить class="photo-slot"
+   на самой картинке. */
+img.photo-slot {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: none;
+  background: none;
+  padding: 0;
 }
 
 .photo-slot__icon {
@@ -702,7 +811,61 @@ button {
     gap: 14px;
   }
 }
+/* ==========================================================================
+   gallery (тату, кастом — свободный архив без цен и тегов)
+   ========================================================================== */
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-card {
+  background: var(--ink-soft);
+  border: 2px solid var(--ink-line);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.gallery-card .photo-slot {
+  aspect-ratio: 1 / 1;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.gallery-card h3 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.gallery-more {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.gallery-more p {
+  font-family: var(--font-mark);
+  font-size: 22px;
+  margin: 0 0 16px;
+  color: var(--acid);
+}
+
+@media (max-width: 980px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+}
 /* ==========================================================================
    thrift shop / only20dollars (paper section, price-tag cards)
    ========================================================================== */

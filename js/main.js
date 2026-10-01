@@ -79,8 +79,31 @@
     if (el) el.textContent = new Date().getFullYear();
   }
 
+    function initBurger() {
+    var burger = document.querySelector(".nav__burger");
+    var menu = document.getElementById("nav-mobile");
+    if (!burger || !menu) return;
+
+    function closeMenu() {
+      menu.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+    }
+
+    function toggleMenu() {
+      var isOpen = menu.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+
+    burger.addEventListener("click", toggleMenu);
+
+    menu.querySelectorAll(".nav__mobile-link").forEach(function (link) {
+      link.addEventListener("click", closeMenu);
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initLangToggle();
     initYear();
+    initBurger();
   });
 })();
